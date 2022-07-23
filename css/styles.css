@@ -1,0 +1,58 @@
+/* 
+main header color: #212121 
+main text and header contacts color: #757575
+accent color: #2196F3
+footer  contacts color: rgba(255, 255, 255, 0.6)
+h1, blocks bgc, footer addres and order button text color: #FFFFFF
+order service bgc: #2F303A
+bgc: #E5E5E5
+*/
+
+
+/* main styles */
+body {
+    background-color: #E5E5E5;
+    color: #757575;
+    font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        text-align: left;
+}
+
+a {
+text-decoration: none;
+}
+
+/* header styles */
+header {
+    background-color: #ffffff;
+}
+
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+}
+
+.logo-part1 {
+    color: #2196F3;
+}
+
+.logo-part2 {
+    color: #000000;
+}
+
+.nav-link {
+    color: #212121;
+}
+
+.contacnts-link {
+    color: #757575;
+}
