@@ -1,24 +1,21 @@
-/* 
-main header color: #212121 
-main text and header contacts color: #757575
-accent color: #2196F3
-footer  contacts color: rgba(255, 255, 255, 0.6)
-h1, blocks bgc, footer addres and order button text color: #FFFFFF
-order service bgc: #2F303A
-bgc: #E5E5E5
-*/
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-text-color: #2196F3;
     --primary-background-color: #F5F5F5;
     --secondary-background-color: #2F303A;
+    --primary-white-color: #ffffff;
+    --third-bacground-color: #F5F4FA;
+    --primary-black-color: #000000;
+    --address-link-color: rgba(255, 255, 255, 0.6);
+    
 }
 
 /* global styles */
 body {
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
 }
 ul {
     list-style: none;
@@ -28,7 +25,6 @@ a {
 text-decoration: none;
 }
 
-h1,
 h2,
 h3,
 h4,
@@ -36,16 +32,15 @@ h5,
 h6 {
     color: var(--title-text-color);
 }
-/* header and footer styles */
+/* header styles */
 header {
-    background-color: #ffffff;
+    background-color: var(--primary-white-color);
 }
 
 .logo {
-    font-family: 'Raleway';
-    font-weight: 700;
+    font-family: Raleway, sans-serif;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     /* identical to box height */
 
     letter-spacing: 0.03em;
@@ -56,23 +51,30 @@ header {
 }
 
 .logo-part2 {
-    color: #000000;
+    color: var(--primary-black-color);
 }
 
 .nav-link {
-    color: #212121;
-    font-family: Roboto;
+    color: var(--title-text-color);
         font-size: 14px;
         font-weight: 500;
-        line-height: 16px;
         letter-spacing: 0.02em;
 }
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-text-color);
+}
+
 .nav-link.current {
     color: var(--accent-text-color);
 }
 
 .contacnts-link {
-    color: #757575;
+    color: var(--primary-text-color);
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
 }
 
 .contacnts-link:hover,
@@ -83,15 +85,63 @@ header {
 /* Main styles */
 .oreder-section {
     background-color: var(--secondary-background-color);
-    color: #FFFFFF;
+            line-height: 1.36;
+                letter-spacing: 0.06em;
+                text-align: center;
+}
+
+.oreder-section h1 {
+    font-size: 44px;
+    color: var(--primary-white-color);
+
+}
+
+.order-button {
+    font-family: inherit;
+    background-color: var(--accent-text-color);
+    height: 50px;
+        width: 200px;
+        border-radius: 4px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1.875;
+            letter-spacing: 0.06em;
+            color: var(--primary-white-color);
+}
+
+.qalities h3 {
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+}
+
+.qalities p {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+}
+
+.section-title {
+        font-size: 36px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-align: center;
 }
 
 .team-section {
-    background-color: #F5F4FA;
+    background-color: var(--third-bacground-color);
 }
 
 .team-unit {
-    background-color: #ffffff;
+    background-color: var(--primary-white-color);
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        text-align: center;
+}
+
+.team-unit h3 {
+        font-size: 16px;
+        font-weight: 500;
 }
 
 /* footer styles */
@@ -99,12 +149,19 @@ footer {
     background-color: var(--secondary-background-color);
 }
 
+footer .logo-part2 {
+    color: var(--primary-white-color);
+}
+
 address {
     font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
 }
 
 .address-link {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--address-link-color);
 }
 
 .address-link:hover,
@@ -112,8 +169,35 @@ address {
     color: var(--accent-text-color);
 }
 .map-link {
-    color: #FFFFFF;
+    color: var(--primary-white-color);
 }
 
-/* portfolio styles
+/* portfolio styles */
+.portfolio {
+    background-color: var(--primary-white-color);
+}
 
+.filter-button {
+    font-family: inherit;
+    background-color: var(--third-bacground-color);
+font-size: 16px;
+font-weight: 500;
+line-height: 1.63;
+letter-spacing: 0.03em;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    background-color: var(--accent-text-color);
+}
+
+.portfolio h3 {
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+}
+
+.portfolio p {
+        line-height: 1.67;
+        letter-spacing: 0.03em;
+}
