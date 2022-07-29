@@ -93,7 +93,7 @@ header {
 .oreder-section h1 {
     font-size: 44px;
     color: var(--primary-white-color);
-
+    text-transform: uppercase;
 }
 
 .order-button {
@@ -113,6 +113,7 @@ header {
             font-size: 14px;
             line-height: 1.14;
             letter-spacing: 0.03em;
+            text-transform: uppercase;
 }
 
 .qalities p {
@@ -189,9 +190,10 @@ letter-spacing: 0.03em;
 .filter-button:hover,
 .filter-button:focus {
     background-color: var(--accent-text-color);
+    color: var(--primary-white-color)
 }
 
-.portfolio h3 {
+.portfolio h2 {
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
